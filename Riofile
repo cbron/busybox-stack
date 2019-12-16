@@ -9,5 +9,4 @@ services:
       tagInclude: ^v # If tag is true, only use tags matching this pattern
       tagExclude: rc # If tag is true, exclude any tags with this pattern
     ports:
-    - 8081
-
+    - 8080
