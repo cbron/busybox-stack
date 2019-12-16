@@ -10,3 +10,4 @@ services:
       tagExclude: rc # If tag is true, exclude any tags with this pattern
     ports:
     - 8080
+
