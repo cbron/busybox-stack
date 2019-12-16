@@ -1,0 +1,15 @@
+# rio up -n tag-demo
+services:
+  rfd:
+    build:
+      repo: https://github.com/cbron/mybusybox
+      branch: master
+      webhookSecretName: githubtoken # Specify the github secret name. Used to create Github webhook, the secret key has to be `accessToken`
+      tag: true # Optionally enable to build off every tag release in the repo
+      tagInclude: ^v # If tag is true, only use tags matching this pattern
+      tagExclude: rc # If tag is true, exclude any tags with this pattern
+    ports:
+    - 8080
+
+
+
